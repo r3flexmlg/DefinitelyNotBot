@@ -12,8 +12,9 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
+    if (message.content === 'role') {
+        let myRole = message.guild.roles.find("name", "tibijczyk");
+    	message.reply(myRole.id);
   	}
 });
 
