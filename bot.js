@@ -17,7 +17,13 @@ client.on('message', message => {
         let myRole = message.guild.roles.find("name", "tibijczyk");
     	message.reply(myRole.id);
   	}
+    
+    if (message.content === 'configtest') {
+    	message.reply(config.ownerID);
+  	}
 });
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
