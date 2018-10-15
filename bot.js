@@ -23,7 +23,7 @@ client.on('message', message => {
   	}
     
     if (message.content === 'boh') {
-        var user = new ClientUser();
+        var user = new Discord.ClientUser();
     	message.reply(user.id);
   	}
 });
