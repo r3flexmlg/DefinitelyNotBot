@@ -26,9 +26,9 @@ client.on('message', message => {
         var server = new Discord.Guild();
         var members = server.members;
         message.reply(members.values());
-        server.fetchMembers()
-            .then(console.log)
-            .catch(console.error);
+        guild.fetchMembers()
+          .then(console.log)
+          .catch(console.error);
   	}
 });
 
