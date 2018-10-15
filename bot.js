@@ -23,9 +23,8 @@ client.on('message', message => {
   	}
     
     if (message.content === 'boh') {
-        var user = new Discord.ClientUser();
-    	message.reply(user.id);
-        message.reply(user.users);
+        //var server = new Discord.Guild();
+        message.reply(guild.members);
   	}
 });
 
