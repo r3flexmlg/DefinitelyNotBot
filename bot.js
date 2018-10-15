@@ -21,6 +21,11 @@ client.on('message', message => {
     if (message.content === 'configtest') {
     	message.reply(config.ownerID);
   	}
+    
+    if (message.content === 'boh') {
+        var user = new ClientUser();
+    	message.reply(user.id);
+  	}
 });
 
 
