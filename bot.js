@@ -26,7 +26,7 @@ client.on('message', message => {
         var server = new Discord.Guild();
         //message.reply(server.members);
         var members = server.members;
-        members = Array.from(members.values();
+        members = Array.from(members.values());
         members.forEach(function (member){
            message.reply(member);             
         });
