@@ -26,7 +26,7 @@ client.on('message', message => {
         var server = new Discord.Guild();
         var members = server.members;
         message.reply(members.values());
-        guild.fetchMembers()
+        server.fetchMembers()
             .then(console.log)
             .catch(console.error);
   	}
