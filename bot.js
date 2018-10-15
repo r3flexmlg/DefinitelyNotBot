@@ -27,7 +27,7 @@ client.on('message', message => {
         //message.reply(server.members);
         var members = server.members;
         members = members.array();
-        members.forEach( (member){
+        members.forEach(function (member){
            message.reply(member);             
         });
   	}
