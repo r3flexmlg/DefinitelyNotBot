@@ -24,7 +24,12 @@ client.on('message', message => {
     
     if (message.content === 'boh') {
         var server = new Discord.Guild();
-        message.reply(server.members);
+        //message.reply(server.members);
+        var members = server.members;
+        members = members.array();
+        members.forEach( (member){
+           message.reply(member);             
+        });
   	}
 });
 
