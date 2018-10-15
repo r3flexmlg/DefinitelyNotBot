@@ -23,8 +23,8 @@ client.on('message', message => {
   	}
     
     if (message.content === 'boh') {
-        //var server = new Discord.Guild();
-        message.reply(guild.members);
+        var server = new Discord.Guild();
+        message.reply(server.members);
   	}
 });
 
